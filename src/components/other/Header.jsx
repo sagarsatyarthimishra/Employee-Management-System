@@ -9,7 +9,7 @@ const Header = (props) => {
 
     if (loggedInUser) {
       if (loggedInUser.role === "admin") {
-        setUsername("Ritvij");
+        setUsername("Sagar Satyarthi Mishra");
       } else if (loggedInUser.role === "employee" && loggedInUser.data) {
         setUsername(loggedInUser.data.firstName|| "Employee");
         console.log(loggedInUser.data.firstName) // Fallback to "Employee" if name is missing
